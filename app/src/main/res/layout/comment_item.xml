@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:backgroundTint="@color/yellow"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="32dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black2"
+        app:cardCornerRadius="32dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_date_comment_id"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_name_user_comment_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView_name_user_comment_id"
+                tools:text="21/9/2020" />
+
+            <TextView
+                android:id="@+id/textView_name_user_comment_id"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/whit"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="@+id/imageView4"
+                tools:text="Moomen S." />
+
+            <TextView
+                android:id="@+id/textView_user_comment_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/full_corner_background_black"
+                android:foreground="@drawable/border_rectangl_yellow_1dp"
+                android:padding="18dp"
+                android:textColor="@color/whit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                tools:text="Comment" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

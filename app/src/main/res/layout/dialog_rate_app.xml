@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
+    android:background="@drawable/full_corner_background_black_32dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:adjustViewBounds="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/icon2_app"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/discribtion_rate_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/please_rate"
+        android:textColor="@color/whit"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15">
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_black_24dp" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_star_black_24dp" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_star_black_24dp" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_star_black_24dp" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_star_black_24dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/rate_app_now_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/full_corner_background_yellow"
+            android:text="@string/rate" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/remind_me_later_id"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/noColor"
+                android:gravity="center"
+                android:text="@string/remind_me_later"
+                android:textColor="@color/yellow" />
+
+            <Button
+                android:id="@+id/no_thanks_id"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/noColor"
+                android:gravity="center"
+                android:paddingEnd="24dp"
+                android:text="@string/no_thanks"
+                android:textColor="@color/whit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

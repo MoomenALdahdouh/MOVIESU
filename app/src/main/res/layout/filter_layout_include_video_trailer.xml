@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_corner_background"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".ui.fragment.LiveFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/full_corner_background_yellow"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="2dp"
+            android:text="@string/trailers"
+            android:textColor="@color/black1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Switch
+            android:id="@+id/switch_video_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:showText="true"
+            android:textAlignment="center"
+            android:textColor="@color/whit"
+            android:textOff="@string/movies"
+            android:textOn="@string/tv"
+            android:textStyle="bold"
+            android:thumb="@drawable/sw_thumb"
+            android:track="@drawable/sw_track"
+            tools:targetApi="lollipop" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/radio_id_f0"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/all"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f1"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/action"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f2"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/adventure"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f3"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/cartoon"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f4"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/comedy"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f5"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/crime"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f6"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/documentary"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f7"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/drama"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f8"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/family"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f9"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/fantasy"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f10"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/history"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f11"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/horror"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f12"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/music"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f13"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/mystery"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f14"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/romance"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f15"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/science_fiction"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f16"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/tv_movie"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f17"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/thriller"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f18"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/war"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f19"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/western"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/radio_id_f20"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:foreground="@drawable/border_rectangl_black_1dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/clear_filter"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

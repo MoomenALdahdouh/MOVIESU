@@ -1,0 +1,129 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        releaseConfig {
+            storeFile file('C:\\Users\\Moomen S\\Desktop\\Releas\\MoviesUKey.jks')
+            storePassword 'moomen .8'
+            keyAlias 'MoviesUKey0'
+            keyPassword 'moomen. 8'
+        }
+    }
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.moomen.movieyou"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 8
+        versionName "1.8.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        /*release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug { 
+            testCoverageEnabled = true
+        }*/
+        debug {
+            minifyEnabled false
+            testCoverageEnabled = true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+            shrinkResources false
+        }
+        release {
+            debuggable true
+            // Enables code shrinking, obfuscation, and optimization for only
+            // your project's release build type.
+            minifyEnabled true
+
+            // Includes the default ProGuard rules files that are packaged with
+            // the Android Gradle plugin. To learn more, go to the section about
+            // R8 configuration files.
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            zipAlignEnabled true
+
+            // Enables resource shrinking, which is performed by the
+            // Android Gradle plugin.
+            shrinkResources true
+            signingConfig signingConfigs.releaseConfig
+        }
+    }
+    buildTypes.each {
+        it.buildConfigField 'String', 'THE_MOBIE_DB_API_TOKEN', MyTheMovieDBApiToken
+    }
+    viewBinding {
+        enabled = true
+    }
+
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //butter knife
+    annotationProcessor 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    //MVVM
+    def lifecycle_version = "2.2.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.android.volley:volley:1.1.1'
+    //swipeRefresh
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    //Youtube
+    //noinspection GradlePath
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+    //Corner Round Image
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //Firebase
+    implementation 'com.google.firebase:firebase-analytics:18.0.0'
+    //Firebase ads
+    implementation 'com.google.firebase:firebase-core:18.0.0'
+    implementation 'com.google.firebase:firebase-ads:19.5.0'
+    //Firebase notifiction
+    implementation 'com.google.firebase:firebase-messaging:21.0.0'
+    //noinspection GradleDependency
+    implementation 'com.google.firebase:firebase-database:19.4.0'
+    //button design
+    implementation 'com.github.ceryle:RadioRealButton:v2.1.1'
+    //Ad admob
+    implementation 'com.google.android.gms:play-services-ads:19.5.0'
+    implementation 'com.github.daoibrahim:AdmobAdvancedNativeRecyclerview:1.0.0'
+    //support multidex
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.github.hotchemi:android-rate:1.0.1'
+    //Native Template
+    //implementation project(':nativetemplates')
+    //implementation 'com.facebook.android:audience-network-sdk:'
+    //Zoom Image
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+}
+//Firebase
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'

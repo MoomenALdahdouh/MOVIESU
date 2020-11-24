@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">أفلام يو</string>
+    <string name="home" translatable="false">الرئيسية</string>
+    <string name="movies" translatable="false">الأفلام</string>
+    <string name="streaming_and_tv" translatable="false">المسلسلات</string>
+    <string name="animation" translatable="false">الأنمي</string>
+    <string name="watch_list" translatable="false">المفضلة</string>
+    <string name="music" translatable="false">الموسيقى</string>
+    <string name="live" translatable="false">مباشر</string>
+    <string name="job">الوظيفة</string>
+    <string name="person">الأعمال</string>
+    <string name="department">القسم</string>
+    <string name="play_trailer">مشاهدة الإعلان</string>
+    <string name="user_nscore">User\nscore</string>
+    <string name="overview">القصة</string>
+    <string name="videos">الفيديوهات</string>
+    <string name="seasons">المواسم</string>
+    <string name="similar_movies">أفلام مشابهة</string>
+    <string name="credits">الأبطال</string>
+    <string name="recommendations">التوصيات</string>
+    <string name="episode">الحلقات</string>
+    <string name="name">العنوان</string>
+    <string name="rated">التقييم</string>
+    <string name="reales_date">التاريخ</string>
+    <string name="filter">فلتر</string>
+    <string name="see_all"><![CDATA[عرض المزيد >>]]></string>
+    <string name="trending">شائع</string>
+    <string name="tv">المسلسلات</string>
+
+    <string name="all">الكل</string>
+    <string name="action">أكشن</string>
+    <string name="adventure">مغامرة</string>
+    <string name="comedy">كوميديا</string>
+    <string name="crime">جريمة</string>
+    <string name="documentary">وثائقي</string>
+    <string name="drama">دراما</string>
+    <string name="family">عائلي</string>
+    <string name="fantasy">خيال</string>
+    <string name="history">تاريخ</string>
+    <string name="horror">رعب</string>
+    <string name="mystery">غموض</string>
+    <string name="romance">رومانسي</string>
+    <string name="science_fiction">الخيال العلمي</string>
+    <string name="tv_movie">أفلام مسلسلات</string>
+    <string name="thriller">قصص مثيرة</string>
+    <string name="war">حروب</string>
+    <string name="western">أجنبية</string>
+
+    <string name="latest_trailers">أحدث اللإعلانات</string>
+    <string name="most_popular_movies">الأفلام الأكثر شهرة</string>
+    <string name="top_rated_movies">الأفلام الأعلى تقييمًا</string>
+    <string name="now_playing_movies">أفلام تشاهد الآن</string>
+    <string name="recommend_for_you">مخصص لك</string>
+    <string name="your_watch_list">قائمة المشاهدة الخاصة بك</string>
+    <string name="your_watch_list_is_empty">قائمة المشاهدة الخاصة بك فارغة</string>
+    <string name="swipe_left_or_right_to_remove">اسحب إلى اليسار أو اليمين للحذف من القائمة</string>
+    <string name="the_music">الموسيقى</string>
+    <string name="will_be_available_in_the_next_version">ستكون متاحة في الإصدار التالي</string>
+    <string name="airing_today_tv">مسلسلات تبث اليوم</string>
+    <string name="most_popular_tv">المسلسلات الأكثر شهرة</string>
+    <string name="top_rated_tv">المسلسلات الأعلى تقييمًا</string>
+    <string name="on_the_air_tv">مسلسلات تشاهد الآن</string>
+    <string name="no_internet">لا يوجد انترنت !</string>
+    <string name="turn_on_wifi">تشغيل الواي فاي</string>
+    <string name="try_again">حاول مجددا</string>
+    <string name="open_app">إفتح التطبيق</string>
+    <string name="remove_from_list">تم الحذف من القائمة</string>
+    <string name="add_to_watch_list">تمت الإضافة إل القائمة</string>
+    <string name="copy_movie_name">نسخ إسم الفيلم</string>
+    <string name="connect">متصل بالإنترنت</string>
+    <string name="search">البحث</string>
+    <string name="the_trailer_is_not_available_now">الإعلان غير متوفر حاليا</string>
+    <string name="loading">فتح..</string>
+    <string name="your_name">أكتب إسمك</string>
+    <string name="comment">تعليق</string>
+    <string name="added_comment">تم إضافة التعليق</string>
+    <string name="write_new_comment">أكتب تعليق جديد</string>
+    <string name="write_your_comment_her">أكتب تعليقك هنا</string>
+    <string name="write_first_comment">كن أول من يعلق</string>
+    <string name="clear_filter">تنظيف الفلتر</string>
+    <string name="kids">مباشر | أطفال</string>
+    <string name="watch_now">شاهد الآن</string>
+    <string name="visit">عرض</string>
+    <string name="trailers">فيديوهات</string>
+    <string name="free">أفلام مجانيةً</string>
+    <string name="translated">مترجم</string>
+    <string name="us">أجنبية</string>
+    <string name="cartoon">كرتون</string>
+    <string name="share_movie">شارك الفيلم</string>
+    <string name="write_name_and_comment">رجاء أكتب اسمك و تعليقك!</string>
+    <string name="delete_from_list">حذف من القائمة</string>
+
+
+    <!--Spinner-->
+    <string-array name="media">
+        <item>أفلام</item>
+        <item>مسلسلات</item>
+        <item>أفلام أنمي</item>
+        <item>مسلسلات أنمي</item>
+    </string-array>
+    <!--Spinner-->
+    <string-array name="sortBy">
+        <item>ترتيب حسب</item>
+        <item>الأكثر شعبية</item>
+        <item>الأقل شعبية</item>
+        <item>الأحدث</item>
+        <item>الأقدم</item>
+        <item>الأكثر تقييم</item>
+        <item>الأقل تقييم</item>
+        <item>الأعلى تصويت</item>
+        <item>الأقل تصويت</item>
+    </string-array>
+    <!--Spinner-->
+    <string-array name="desAsc">
+        <item>تصاعديا</item>
+        <item>تنازليا</item>
+    </string-array>
+    <!--Country-->
+    <string-array name="country">
+        <item>البلد</item>
+        <item>عربية</item>
+        <item>صينية</item>
+        <item>أجنبية</item>
+        <item>فرنسية</item>
+        <item>ألمانيا</item>
+        <item>هندية</item>
+        <item>إيطالية</item>
+        <item>يابانية</item>
+        <item>كورية</item>
+        <item>روسية</item>
+        <item>أسبانيا</item>
+        <item>تركيا</item>
+    </string-array>
+
+    <!--Native Ad-->
+    <string name="ad_title">إعلان</string>
+
+    <string name="new_movie">جديد</string>
+    <string name="movie_type">فيلم</string>
+    <string name="tv_type">مسلسل</string>
+
+    <!--Reat app-->
+    <string name="remind_me_later">ذكرني لاحقا</string>
+    <string name="rate">قييم الأن</string>
+    <string name="if_you_enjoy_using">إذا كنت تستمتع بإستخدام تطبيق أفلام يو فهل تمانع بأخذ بعض الوقت لتقييمه؟ لن يستغرق التقييم أكثر من دقيقة. شكرا لدعمك لي! </string>
+    <string name="please_rate">رجاء قييم التطبيق!</string>
+    <string name="no_thanks">لا، شكرا</string>
+
+    <string name="shuffling">خلط</string>
+
+
+</resources>

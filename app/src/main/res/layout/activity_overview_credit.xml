@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black1">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            app:contentScrim="@color/yellow"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow"
+                app:cardCornerRadius="24dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/imageView_poster_credit_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="260dp"
+                        android:adjustViewBounds="true"
+                        android:foreground="@drawable/full_image_corner_black1"
+                        android:paddingStart="5dp"
+                        android:paddingTop="6dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:src="@drawable/credit" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar_poster_credit_overview_id"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_background_black"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView_poster_credit_id"
+                        app:layout_constraintEnd_toEndOf="@id/imageView_poster_credit_id"
+                        app:layout_constraintStart_toStartOf="@id/imageView_poster_credit_id"
+                        app:layout_constraintTop_toTopOf="@id/imageView_poster_credit_id" />
+
+
+                    <TextView
+                        android:id="@+id/textView_name_credit_overview_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textColor="@color/black2"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/textView22"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/imageView_poster_credit_id"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Josif mosticif " />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="@string/job"
+                        android:textColor="@color/black2"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/textView_job_credit_overview_id"
+                        app:layout_constraintEnd_toEndOf="@+id/textView_name_credit_overview_id"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/textView_name_credit_overview_id"
+                        app:layout_constraintTop_toBottomOf="@+id/textView_name_credit_overview_id" />
+
+                    <TextView
+                        android:id="@+id/textView_job_credit_overview_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:textColor="@color/black2"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView20"
+                        app:layout_constraintEnd_toEndOf="@+id/textView22"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/textView22"
+                        app:layout_constraintTop_toBottomOf="@+id/textView22"
+                        tools:text="Actor" />
+
+                    <TextView
+                        android:id="@+id/textView_department_credit_overview_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="24dp"
+                        android:gravity="center"
+                        android:textColor="@color/black2"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView20"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/textView20"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20"
+                        tools:text="Acting" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="@string/department"
+                        android:textColor="@color/black2"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/textView_department_credit_overview_id"
+                        app:layout_constraintEnd_toEndOf="@+id/textView_job_credit_overview_id"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/textView_job_credit_overview_id"
+                        app:layout_constraintTop_toBottomOf="@+id/textView_job_credit_overview_id" />
+
+                    <TextView
+                        android:id="@+id/textView_popularity_credit_overview_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/circle_background_black"
+                        android:foreground="@drawable/border_yellow_1dp"
+                        android:gravity="center"
+                        android:textColor="@color/yellow"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView_poster_credit_id"
+                        app:layout_constraintStart_toEndOf="@+id/imageView_poster_credit_id"
+                        tools:text="30.0%" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/black1"
+            app:cardCornerRadius="50dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.OverviewCredit">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Media"
+                    android:textColor="@color/yellow"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_media_credit_overview_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                <!--Banner ad-->
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView_banner_credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:adSize="SMART_BANNER"
+                    app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerView_media_credit_overview_id" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:foreground="@drawable/border_rectangl_yellow_1dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="2dp"
+                    android:text="@string/person"
+                    android:textColor="@color/yellow"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/adView_banner_credit" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_person_credit_overview_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

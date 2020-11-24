@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/full_corner_background_black"
+    android:foreground="@drawable/border_rectangl_yellow_1dp"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_copy_name_movie_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        tools:ignore="UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/copy_name_movie_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_outline_file_copy_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:text="@string/copy_movie_name"
+            android:textColor="@color/yellow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_share_movie_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        tools:ignore="UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/share_movie_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_baseline_share_24"
+            app:layout_constraintBottom_toTopOf="@+id/add_movie_to_watch_list_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/copy_name_movie_id" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:text="@string/share_movie"
+            android:textColor="@color/yellow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_add_movie_to_watch_list_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        tools:ignore="UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/add_movie_to_watch_list_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_baseline_playlist_add_check_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:text="@string/delete_from_list"
+            android:textColor="@color/yellow" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

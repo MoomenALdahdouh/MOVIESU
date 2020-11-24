@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/full_corner_background_yellos_32dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/full_corner_background_black1_32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            app:layout_constraintBottom_toTopOf="@+id/edit_text_user_comment_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/edit_text_user_name_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/full_corner_background_black"
+            android:foreground="@drawable/border_rectangl_yellow_1dp"
+            android:hint="@string/your_name"
+            android:maxLines="1"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/whit"
+            android:textColorHint="@color/yellow3"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toStartOf="@+id/space"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            tools:ignore="UnusedAttribute"
+            tools:targetApi="m" />
+
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/button_comment_id"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edit_text_user_name_id"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_comment_id"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/full_corner_background_yellow"
+            android:foreground="@drawable/border_rectangl_black_1dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/comment"
+            android:textColor="@color/black2"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_text_user_name_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/space"
+            app:layout_constraintTop_toTopOf="@+id/edit_text_user_name_id" />
+
+        <EditText
+            android:id="@+id/edit_text_user_comment_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/full_corner_background_black"
+            android:foreground="@drawable/border_rectangl_yellow_1dp"
+            android:hint="@string/write_your_comment_her"
+            android:inputType="textPersonName"
+            android:maxLines="3"
+            android:padding="16dp"
+            android:textColor="@color/whit"
+            android:textColorHint="@color/yellow3"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/recycler_view_comments_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            tools:ignore="UnusedAttribute"
+            tools:targetApi="m" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_comments_id"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_user_comment_id" />
+
+        <TextView
+            android:id="@+id/textView_no_comment_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/full_corner_background_yellow"
+            android:foreground="@drawable/border_rectangl_black_1dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/write_first_comment"
+            android:textColor="@color/black2"
+            app:layout_constraintBottom_toBottomOf="@+id/recycler_view_comments_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/recycler_view_comments_id" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

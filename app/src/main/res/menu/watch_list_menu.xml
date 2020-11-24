@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_copy_id"
+        android:icon="@drawable/ic_outline_file_copy_24"
+        android:title="copy"></item>
+
+    <item
+        android:id="@+id/action_remove_id"
+        android:icon="@drawable/ic_baseline_playlist_add_check_24"
+        android:title="remove"></item>
+
+    <item
+        android:id="@+id/action_share_id"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="share"></item>
+
+</menu>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/black2"
+    app:cardCornerRadius="48dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <Spinner
+                android:id="@+id/spinner_des_asc_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:backgroundTint="@color/yellow"
+                android:foreground="@drawable/border_rectangl_yellow_1dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_sort_by_id"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinner_cuntry_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/yellow"
+                android:foreground="@drawable/border_rectangl_yellow_1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/spinner_sort_by_id"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinner_sort_by_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:backgroundTint="@color/yellow"
+                android:foreground="@drawable/border_rectangl_yellow_1dp"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_cuntry_id"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/spinner_des_asc_id"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/rated"
+                android:textColor="@color/yellow"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_sort_by_id" />
+
+            <TextView
+                android:id="@+id/text_view_seek_bar_rated_id"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/yellow"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_rated_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/seekBar_rated_id"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_rated_id" />
+
+            <SeekBar
+                android:id="@+id/seekBar_rated_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:indeterminate="false"
+                android:max="10"
+                android:min="0"
+                android:progressDrawable="@drawable/seekbare_trak"
+                android:thumb="@drawable/seekbare_thumb"
+                app:layout_constraintEnd_toStartOf="@+id/text_view_seek_bar_rated_id"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="Popularty"
+                android:textColor="@color/yellow"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBar_rated_id" />
+
+            <TextView
+                android:id="@+id/text_view_seek_bar_popularty_id"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0%"
+                android:textColor="@color/yellow"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_popularty_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/seekBar_popularty_id"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_popularty_id" />
+
+            <SeekBar
+                android:id="@+id/seekBar_popularty_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:min="0"
+                android:progressDrawable="@drawable/seekbare_trak"
+                android:thumb="@drawable/seekbare_thumb"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/text_view_seek_bar_popularty_id"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView26"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/reales_date"
+                android:textColor="@color/yellow"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBar_popularty_id" />
+
+            <TextView
+                android:id="@+id/text_view_seek_bar_reales_date_id"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2022"
+                android:textColor="@color/yellow"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_reales_date_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/seekBar_reales_date_id"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_reales_date_id" />
+
+            <SeekBar
+                android:id="@+id/seekBar_reales_date_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:indeterminate="false"
+                android:max="122"
+                android:progressDrawable="@drawable/seekbare_trak"
+                android:thumb="@drawable/seekbare_thumb"
+                app:layout_constraintEnd_toStartOf="@+id/text_view_seek_bar_reales_date_id"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27"
+                tools:targetApi="o" />
+
+            <Button
+                android:id="@+id/button_filter_id"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/full_corner_background_yellow"
+                android:text="@string/filter"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBar_reales_date_id" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.cardview.widget.CardView>
